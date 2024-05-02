@@ -6,13 +6,12 @@ let addMore= true
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
   while(addMore){
-
-    const firstName = prompt('what is the first name?')
-    const lastName = prompt('what is hte last name?')
-    const salary = prompt('what is the salary?')
+    const firstName = prompt('Employee first name:')
+    const lastName = prompt('Employee last name:')
+    const salary = prompt('Salary:')
     const newEmployee = {firstName, lastName, salary}
     employeesArray.push(newEmployee)
-    addMore = confirm('do you want to add another employee?')
+    addMore = confirm('Do you want to add another employee?')
   }
   return employeesArray
   //displayEmployees(employeesArray)
